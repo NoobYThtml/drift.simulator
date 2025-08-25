@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Astra Studio — Creative Web Experiences</title>
+  <meta name="description" content="Astra Studio crafts clean, fast, and accessible web experiences. Explore our work, pricing, and get in touch." />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Favicon (data URL, no extra file) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E✨%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Astra Studio home">
+        <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" class="brand-logo"><path d="M12 2l3 7h7l-5.5 4 2.1 7-6.6-4.8L5.4 20 7.5 13 2 9h7z" /></svg>
+        <span class="brand-name">Astra <strong>Studio</strong></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" role="navigation">
+        <ul>
+          <li><a href="#home" data-navlink>Home</a></li>
+          <li><a href="#features" data-navlink>Features</a></li>
+          <li><a href="#work" data-navlink>Work</a></li>
+          <li><a href="#pricing" data-navlink>Pricing</a></li>
+          <li><a href="#blog" data-navlink>Blog</a></li>
+          <li><a href="#contact" data-navlink>Contact</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme" data-theme-toggle>
+          <span class="theme-icon" aria-hidden="true">🌗</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="section hero section--pad-lg">
+      <div class="container grid-2">
+        <div class="hero-copy" data-animate="fade-up">
+          <p class="eyebrow">Creative Web Experiences</p>
+          <h1>Designs that <span class="gradient">convert</span> and code that <span class="underline">performs</span>.</h1>
+          <p class="lead">We build fast, accessible, and beautiful websites for brands that care about craft.</p>
+
+          <div class="cta-row">
+            <a class="btn btn--primary" href="#contact">Start a project</a>
+            <a class="btn btn--ghost" href="#work">See our work</a>
+          </div>
+
+          <ul class="hero-stats" role="list">
+            <li><strong>200+</strong> Projects</li>
+            <li><strong>98%</strong> SAT score</li>
+            <li><strong>0.8s</strong> Median LCP</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" data-animate="float">
+          <div class="card code-card">
+            <div class="code-card__header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="code-title">app.jsx</span>
+            </div>
+<pre class="code"><code><span class="tok-c">/* Snippet: Hero component */</span>
+<span class="tok-k">export</span> <span class="tok-k">function</span> <span class="tok-f">Hero</span>() {
+  <span class="tok-k">return</span> (
+    <span class="tok-p">&lt;</span><span class="tok-f">section</span> <span class="tok-a">className</span>=<span class="tok-s">"hero"</span><span class="tok-p">&gt;</span>
+      <span class="tok-p">&lt;</span><span class="tok-f">h1</span><span class="tok-p">&gt;</span>Design that converts<span class="tok-p">&lt;/</span><span class="tok-f">h1</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-f">section</span><span class="tok-p">&gt;</span>
+  )
+}</code></pre>
+          </div>
+          <img class="hero-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop" alt="Team collaborating around laptops" />
+        </div>
+      </div>
+      <div class="shape-divider" aria-hidden="true"></div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section section--alt">
+      <div class="container">
+        <header class="section-head" data-animate="fade-up">
+          <h2>Everything you need to ship with confidence</h2>
+          <p class="subhead">Performance, accessibility, and polish baked in from day one.</p>
+        </header>
+
+        <div class="features-grid">
+          <article class="feature" data-animate="fade-up" style="--delay:0ms">
+            <div class="feature-icon">⚡</div>
+            <h3>Speed Obsessed</h3>
+            <p>Image optimization, code-splitting, and best-in-class Core Web Vitals.</p>
+          </article>
+
+          <article class="feature" data-animate="fade-up" style="--delay:100ms">
+            <div class="feature-icon">♿</div>
+            <h3>Accessible by Default</h3>
+            <p>Semantic HTML, ARIA patterns, and keyboard-friendly interactions.</p>
+          </article>
+
+          <article class="feature" data-animate="fade-up" style="--delay:200ms">
+            <div class="feature-icon">🎨</div>
+            <h3>Elegant Design System</h3>
+            <p>Tokens, variables, and a cohesive visual language out of the box.</p>
+          </article>
+
+          <article class="feature" data-animate="fade-up" style="--delay:300ms">
+            <div class="feature-icon">🔒</div>
+            <h3>Security Conscious</h3>
+            <p>Headers, CSP tips, and careful handling of user interactions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Portfolio -->
+    <section id="work" class="section">
+      <div class="container">
+        <header class="section-head" data-animate="fade-up">
+          <h2>Selected Work</h2>
+          <p class="subhead">Filter by category to explore our projects.</p>
+        </header>
+
+        <div class="filter-row" role="toolbar" aria-label="Portfolio filters">
+          <button class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="web">Web</button>
+          <button class="chip" data-filter="app">App</button>
+          <button class="chip" data-filter="branding">Branding</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Cards -->
+          <article class="card project" data-cat="web" data-animate="fade-up">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Code editor on a laptop" />
+            <div class="card-body">
+              <h3>Velocity</h3>
+              <p>Headless commerce storefront with instant search.</p>
+              <a class="card-link" href="#" aria-label="View Velocity project">View case study →</a>
+            </div>
+          </article>
+
+          <article class="card project" data-cat="app" data-animate="fade-up" style="--delay:100ms">
+            <img src="https://images.unsplash.com/photo-1555421689-43cad7100751?q=80&w=1200&auto=format&fit=crop" alt="Mobile app on a phone" />
+            <div class="card-body">
+              <h3>Pulse</h3>
+              <p>Health tracking iOS app with offline sync.</p>
+              <a class="card-link" href="#" aria-label="View Pulse project">View case study →</a>
+            </div>
+          </article>
+
+          <article class="card project" data-cat="branding" data-animate="fade-up" style="--delay:200ms">
+            <img src="https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=1200&auto=format&fit=crop" alt="Color palette swatches" />
+            <div class="card-body">
+              <h3>Nebula</h3>
+              <p>Brand identity & guidelines for a fintech startup.</p>
+              <a class="card-link" href="#" aria-label="View Nebula project">View case study →</a>
+            </div>
+          </article>
+
+          <article class="card project" data-cat="web" data-animate="fade-up">
+            <img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1200&auto=format&fit=crop" alt="Abstract 3D shapes" />
+            <div class="card-body">
+              <h3>Quark</h3>
+              <p>Marketing site with animated 3D assets.</p>
+              <a class="card-link" href="#" aria-label="View Quark project">View case study →</a>
+            </div>
+          </article>
+
+          <article class="card project" data-cat="app" data-animate="fade-up" style="--delay:100ms">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Developer typing on keyboard" />
+            <div class="card-body">
+              <h3>Atlas</h3>
+              <p>Cross‑platform notes with end‑to‑end encryption.</p>
+              <a class="card-link" href="#" aria-label="View Atlas project">View case study →</a>
+            </div>
+          </article>
+
+          <article class="card project" data-cat="branding" data-animate="fade-up" style="--delay:200ms">
+            <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1200&auto=format&fit=crop" alt="Stationery mockups" />
+            <div class="card-body">
+              <h3>Orbit</h3>
+              <p>Complete rebrand with motion system and assets.</p>
+              <a class="card-link" href="#" aria-label="View Orbit project">View case study →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-head" data-animate="fade-up">
+          <h2>What clients say</h2>
+          <p class="subhead">Some kind words from our partners.</p>
+        </header>
+
+        <div class="slider" data-slider>
+          <button class="slider-btn prev" aria-label="Previous testimonial">‹</button>
+          <div class="slides" aria-live="polite">
+            <figure class="slide is-active">
+              <blockquote>“Astra Studio delivered the fastest site in our industry. Traffic up 42%.”</blockquote>
+              <figcaption>— Maya S., CMO @ Flow</figcaption>
+            </figure>
+            <figure class="slide">
+              <blockquote>“We launched in 8 weeks with immaculate accessibility. Amazing team.”</blockquote>
+              <figcaption>— Jonah P., Founder @ Kinectic</figcaption>
+            </figure>
+            <figure class="slide">
+              <blockquote>“Best vendor experience in 10 years. Clear comms, elite craft.”</blockquote>
+              <figcaption>— Priya R., Product Lead @ Sensa</figcaption>
+            </figure>
+          </div>
+          <button class="slider-btn next" aria-label="Next testimonial">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <header class="section-head" data-animate="fade-up">
+          <h2>Transparent pricing</h2>
+          <p class="subhead">Pick the plan that matches your goals.</p>
+        </header>
+
+        <div class="pricing-grid">
+          <article class="price-card" data-animate="fade-up">
+            <h3>Starter</h3>
+            <p class="price"><span class="currency">$</span>2,400</p>
+            <ul class="features" role="list">
+              <li>Single‑page site</li>
+              <li>Brand styling</li>
+              <li>Basic analytics</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost">Choose Starter</a>
+          </article>
+
+          <article class="price-card featured" data-animate="fade-up" style="--delay:100ms">
+            <div class="badge">Most Popular</div>
+            <h3>Growth</h3>
+            <p class="price"><span class="currency">$</span>6,900</p>
+            <ul class="features" role="list">
+              <li>Multi‑page site</li>
+              <li>CMS integration</li>
+              <li>Performance budget</li>
+              <li>3 months support</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary">Choose Growth</a>
+          </article>
+
+          <article class="price-card" data-animate="fade-up" style="--delay:200ms">
+            <h3>Scale</h3>
+            <p class="price"><span class="currency">$</span>14,900</p>
+            <ul class="features" role="list">
+              <li>Design system</li>
+              <li>Headless CMS</li>
+              <li>Advanced A/B testing</li>
+              <li>6 months support</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost">Choose Scale</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="section section--alt">
+      <div class="container">
+        <header class="section-head" data-animate="fade-up">
+          <h2>Latest from the blog</h2>
+          <p class="subhead">Stories on UX, performance, and frontend craft.</p>
+        </header>
+
+        <div class="blog-grid" id="blog-grid" data-animate="fade-up">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section-head" data-animate="fade-up">
+          <h2>Let’s build something great</h2>
+          <p class="subhead">Tell us about your project and goals.</p>
+        </header>
+
+        <form class="contact-form" id="contact-form" novalidate data-animate="fade-up">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Ada Lovelace" />
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="ada@example.com" />
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="budget">Budget</label>
+            <select id="budget" name="budget" required>
+              <option value="" disabled selected>Select a range</option>
+              <option value="2k-5k">$2k–$5k</option>
+              <option value="5k-10k">$5k–$10k</option>
+              <option value="10k+">$10k+</option>
+            </select>
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="6" minlength="20" required placeholder="What are you building? Goals, timeline, examples…"></textarea>
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--primary" type="submit">Send message</button>
+            <p class="form-note">We reply within 1 business day.</p>
+          </div>
+
+          <output id="form-output" class="form-output" role="status" aria-live="polite"></output>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#home"><span aria-hidden="true">✨</span> Astra Studio</a>
+        <p class="muted">Clean code. Clear results.</p>
+        <p class="muted small">© <span id="year"></span> Astra Studio. All rights reserved.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <a aria-label="Twitter" href="#" class="social">𝕏</a>
+        <a aria-label="GitHub" href="#" class="social">GH</a>
+        <a aria-label="LinkedIn" href="#" class="social">in</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
